@@ -1,0 +1,78 @@
+==========[1. Newton Second Law]==========
+[ALGORITMA]
+1. Isi massaBenda dengan nilai 600
+2. Isi percepatanBenda dengan nilai 2
+3. Hitung resultanGaya dengan mengkalikan massaBenda dengan percepatanBenda
+
+[PSEUDOCODE]
+SET massaBenda to 600
+SET percepatanBenda to 2
+CALCULATE resultanGaya as massaBenda times percepatanBenda
+DISPLAY resultanGaya
+
+==========[2. Tahun Kabisat]==========
+[ALGORITMA]
+1. Input tahun yang akan ditentukan
+2. Cek tahun jika habis dibagi 4 maka lanjutkan ke tahap 3,
+   jika tidak maka tahun yang diinput bukan tahun kabisat.
+3. Cek tahun jika habis dibagi 100 maka lanjutkan ke tahap 4,
+   jika tidak maka tahun yang diinput merupakan tahun kabisat.
+4. Cek tahun jika habis dibagi 400 maka tahun yang diinput merupakan tahun kabisat,
+   jika tidak maka tahun yang diinput bukan tahun kabisat.
+
+[PSEUDOCODE]
+GET inputTahun
+IF inputTahun habis dibagi 4 THEN
+	IF inputTahun habis dibagi 100 THEN
+		IF inputTahun habis dibagi 400 THEN
+			DISPLAY 'Tahun Kabisat'
+		ELSE
+			DISPLAY 'Bukan Tahun Kabisat'
+		ENDIF
+	ELSE
+		DISPLAY 'Tahun Kabisat'
+	END IF
+ELSE
+	DISPLAY 'Bukan Tahun Kabisat'
+ENDIF
+
+
+==========[3. Laundry Day]==========
+[ALGORITMA]
+1. Set jumlah pakaian yang masuk ke mesin cuci ke 0
+2. Set jumlah pakaian yang akan dicuci sebanyak 20
+2. Masukkan pakaian ke dalam mesin cuci
+3. Tambah jumlah pakaian yang masuk ke mesin cuci sebanyak 1
+4. Jika jumlah pakaian yang masuk ke mesin cuci kurang dari jumlah pakaian yang akan dicuci, balik ke tahap 2,
+   jika tidak, lanjutkan ke tahap 5
+5. Nyalakan mesin cuci
+
+[PSEUDOCODE]
+SET counter to 0
+SET jumlahPakaian to 20
+WHILE counter < jumlahPakaian
+	Masukkan pakaian ke mesin cuci
+	INCREMENT counter by 1
+ENDWHILE
+Nyalakan mesin cuci
+
+==========[4. Periksa Kuku]==========
+[ALGORITMA]
+1. Set jumlah murid yang telah diperiksa ke 0
+2. Set jumlah seluruh murid sebanyak 40
+3. Cek kuku murid, jika kuku murid tersebut panjang maka hukum murid tersebut,
+   jika tidak, maka beri pujian pada murid tersebut
+4. Tambah jumlah murid yang diperiksa sebanyak 1
+5. Jika jumlah murid yang diperiksa kurang dari jumlah seluruh murid, balik ke tahap 3
+   jika tidak, stop algoritma
+   
+[PSEUDOCODE]
+SET counter to 0
+SET jumlahMurid to 40
+WHILE counter < jumlahMurid
+	IF kuku murid panjang THEN
+		Beri hukuman
+	ELSE
+		Beri pujian
+	ENDIF
+ENDWHILE
