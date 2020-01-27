@@ -58,21 +58,22 @@ Nyalakan mesin cuci
 
 ==========[4. Periksa Kuku]==========
 [ALGORITMA]
-1. Set jumlah murid yang telah diperiksa ke 0
+1. Set nilai n ke 1
 2. Set jumlah seluruh murid sebanyak 40
-3. Cek kuku murid, jika kuku murid tersebut panjang maka hukum murid tersebut,
+3. Cek kuku murid ke-n, jika kuku murid tersebut panjang maka hukum murid tersebut,
    jika tidak, maka beri pujian pada murid tersebut
 4. Tambah jumlah murid yang diperiksa sebanyak 1
-5. Jika jumlah murid yang diperiksa kurang dari jumlah seluruh murid, balik ke tahap 3
+5. Jika jumlah murid yang diperiksa kurang dari atau sama dengan jumlah seluruh murid, balik ke tahap 3
    jika tidak, stop algoritma
    
 [PSEUDOCODE]
-SET counter to 0
+SET n to 1
 SET jumlahMurid to 40
-WHILE counter < jumlahMurid
-	IF kuku murid panjang THEN
-		Beri hukuman
+WHILE n =< jumlahMurid
+	IF kuku murid ke-n panjang THEN
+		Beri hukuman kepada murid ke-n
 	ELSE
-		Beri pujian
+		Beri pujian kepada murid ke-n
 	ENDIF
+	INCREMENT n by 1
 ENDWHILE
